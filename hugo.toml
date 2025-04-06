@@ -1,5 +1,0 @@
-baseURL = 'https://aleksandarzizovic.dev/'
-languageCode = 'en-us'
-title = 'Aleksandar Zizovic'
-
-theme = "hextra"

@@ -1,0 +1,64 @@
+title: Aleksandar Zizovic
+baseURL: https://aleksandarzizovic.dev/
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+theme: hextra
+
+permalinks:
+  posts: /posts/:year/:month/:slug/
+
+menu:
+  main:
+    - name: Home
+      pageRef: /
+      weight: 1
+    - name: About
+      pageRef: /about/
+      weight: 2
+    - name: Projects
+      pageRef: /projects/
+      weight: 3
+    - name: Posts
+      pageRef: /posts/
+      weight: 4
+    - name: Contact
+      pageRef: /contact/
+      weight: 5
+    - name: Resume
+      pageRef: /resume/
+      weight: 6
+    - name: Search
+      weight: 7
+      params:
+        type: search
+    - name: GitHub
+      weight: 8
+      url: "https://github.com/z1z0v1c"
+      params:
+        icon: github
+    - name: LinkedIn
+      weight: 9
+      url: "https://www.linkedin.com/in/aleksandar-zizovic/"
+      params:
+        icon: linkedin
+    - name: Twitter
+      weight: 10
+      url: "https://https://x.com/z1z0v1c"
+      params:
+        icon: twitter
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    displayPoweredBy: false
+    displayCopyright: true
