@@ -27,8 +27,8 @@ menu:
       pageRef: /contact/
       weight: 5
     - name: Resume
-      pageRef: /resume/
-      weight: 6
+      weight: 7
+      url: "/Aleksandar_Zizovic_CV.pdf"
     - name: GitHub
       weight: 8
       url: "https://github.com/z1z0v1c"
