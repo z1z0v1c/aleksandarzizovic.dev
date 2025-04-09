@@ -68,3 +68,7 @@ markup:
           block: [['\[', '\]'], ['$$', '$$']]
           inline: [['\(', '\)']]
         enable: true
+
+caches:
+  images:
+    dir: :cacheDir/images
