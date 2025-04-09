@@ -5,4 +5,6 @@ width: full
 toc: false
 ---
 
+## Summary
+
 With 5 years of experience as a Backend Developer, I've worked in diverse international teams, across various technologies and domains, tackling both monoliths and microservices. Passionate about transforming business logic into clean, high-performance solutions. Focused on backend technologies and software architectures, while open to expand my DevOps expertise. Former Mensa member, driven by complex challenges and emerging technologies.

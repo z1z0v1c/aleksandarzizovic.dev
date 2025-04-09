@@ -7,10 +7,10 @@ layout: hextra-home
 
 {{< hextra/hero-container image="/images/A.png" imageTitle="GitHub Avatar" imageWidth="400" >}}
 
-{{< hextra/hero-badge >}}
+<!-- {{< hextra/hero-badge >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
   <span>Open for Collaboration</span>
-{{< /hextra/hero-badge >}}
+{{< /hextra/hero-badge >}} -->
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
