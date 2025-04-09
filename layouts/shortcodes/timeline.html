@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Timeline</title>
+  <style>
+    .simple-timeline {
+      max-width: 800px;
+      margin: 40px auto;
+      position: relative;
+      padding: 20px 0;
+    }
+    
+    .simple-timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: var(--timeline-line-color, #ddd);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+    
+    .timeline-entry {
+      margin-bottom: 30px;
+      position: relative;
+      width: 50%;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.4s ease;
+    }
+    
+    .timeline-entry.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .entry-left {
+      left: 0;
+      padding-right: 40px;
+      text-align: right;
+    }
+    
+    .entry-right {
+      left: 50%;
+      padding-left: 40px;
+    }
+    
+    .timeline-entry::after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: var(--timeline-bullet-color, #000);
+      border-radius: 50%;
+      top: 6px;
+      z-index: 1;
+    }
+    
+    .entry-left::after {
+      right: -6px;
+    }
+    
+    .entry-right::after {
+      left: -6px;
+    }
+    
+    .entry-title {
+      margin: 0 0 5px 0;
+      color: var(--timeline-text-color, #000);
+      font-size: 1.1rem;
+    }
+    
+    .entry-date {
+      margin: 0;
+      color: var(--timeline-date-color, #666);
+      font-size: 0.9rem;
+    }
+    
+    /* Dark/light theme adaptation */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --timeline-line-color: #444;
+        --timeline-bullet-color: #fff;
+        --timeline-text-color: #fff;
+        --timeline-date-color: #aaa;
+      }
+    }
+    
+    /* Mobile view */
+    @media (max-width: 650px) {
+      .simple-timeline::after {
+        left: 30px;
+      }
+      
+      .timeline-entry {
+        width: calc(100% - 60px);
+        left: 0;
+        padding-left: 50px;
+        padding-right: 10px;
+        text-align: left;
+      }
+      
+      .entry-left {
+        text-align: left;
+      }
+      
+      .entry-left::after,
+      .entry-right::after {
+        left: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="simple-timeline">
+    <div class="timeline-entry entry-right">
+      <h3 class="entry-title">Senior Frontend Developer</h3>
+      <p class="entry-date">2023 - Present</p>
+    </div>
+    
+    <div class="timeline-entry entry-left">
+      <h3 class="entry-title">Full Stack Developer</h3>
+      <p class="entry-date">2021 - 2022</p>
+    </div>
+    
+    <div class="timeline-entry entry-right">
+      <h3 class="entry-title">Web Developer</h3>
+      <p class="entry-date">2019 - 2021</p>
+    </div>
+    
+    <div class="timeline-entry entry-left">
+      <h3 class="entry-title">Junior Developer</h3>
+      <p class="entry-date">2017 - 2019</p>
+    </div>
+    
+    <div class="timeline-entry entry-right">
+      <h3 class="entry-title">Web Design Intern</h3>
+      <p class="entry-date">2016 - 2017</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Check for theme
+      function updateThemeColors() {
+        const isDarkMode = document.documentElement.classList.contains('dark') || 
+                          document.body.classList.contains('dark') ||
+                          window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        document.documentElement.style.setProperty('--timeline-line-color', isDarkMode ? '#444' : '#ddd');
+        document.documentElement.style.setProperty('--timeline-bullet-color', isDarkMode ? '#fff' : '#000');
+        document.documentElement.style.setProperty('--timeline-text-color', isDarkMode ? '#fff' : '#000');
+        document.documentElement.style.setProperty('--timeline-date-color', isDarkMode ? '#aaa' : '#666');
+      }
+      
+      // Initial theme setup
+      updateThemeColors();
+      
+      // Watch for theme changes
+      const observer = new MutationObserver(updateThemeColors);
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+      
+      // Simple animation
+      const entries = document.querySelectorAll('.timeline-entry');
+      
+      function checkVisibility() {
+        const windowHeight = window.innerHeight;
+        
+        entries.forEach(entry => {
+          const rect = entry.getBoundingClientRect();
+          if (rect.top <= windowHeight * 0.9) {
+            entry.classList.add('animate');
+          }
+        });
+      }
+      
+      // Initial check
+      setTimeout(checkVisibility, 100);
+      
+      // Check on scroll
+      window.addEventListener('scroll', checkVisibility);
+    });
+  </script>
+</body>
+</html>
