@@ -5,7 +5,7 @@ layout: hextra-home
 
 <div height=20 class="hx:mb-12"></div>
 
-{{< hextra/hero-container image="/images/A.png" imageTitle="GitHub Avatar" imageWidth="400" >}}
+{{< hextra/hero-container image="/images/A.png" imageTitle="GitHub Profile Picture" imageWidth="400" >}}
 
 <!-- {{< hextra/hero-badge >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
