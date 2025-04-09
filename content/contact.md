@@ -1,4 +1,5 @@
 ---
+title: Contact
 layout: simple
 toc: false
 ---
@@ -15,7 +16,7 @@ Feel free to reach out to me through any of these channels.
     </div>
     <div class="contact-info">
       <h3>Email</h3>
-      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="mailto:zizovic.aleksandar@outlook.com">zizovic.aleksandar@outlook.com</a>
     </div>
   </div>
   
@@ -26,7 +27,7 @@ Feel free to reach out to me through any of these channels.
     </div>
     <div class="contact-info">
       <h3>LinkedIn</h3>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+      <a href="https://linkedin.com/in/aleksandar-zizovic" target="_blank">linkedin.com/in/aleksandar-zizovic</a>
     </div>
   </div>
   
@@ -37,7 +38,7 @@ Feel free to reach out to me through any of these channels.
     </div>
     <div class="contact-info">
       <h3>GitHub</h3>
-      <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+      <a href="https://github.com/z1z0v1c" target="_blank">github.com/z1z0v1c</a>
     </div>
   </div>
   
@@ -48,7 +49,7 @@ Feel free to reach out to me through any of these channels.
     </div>
     <div class="contact-info">
       <h3>Twitter</h3>
-      <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a>
+      <a href="https://twitter.com/z1z0v1c" target="_blank">@z1z0v1c</a>
     </div>
   </div>
   
@@ -59,7 +60,7 @@ Feel free to reach out to me through any of these channels.
     </div>
     <div class="contact-info">
       <h3>Location</h3>
-      <p>Your City, Country</p>
+      <p>Belgrade, Serbia</p>
     </div>
   </div>
 </div>
@@ -116,7 +117,7 @@ Feel free to reach out to me through any of these channels.
 
 ## Send Me a Message
 
-<form action="https://formspree.io/f/yourkeyhere" method="POST" id="contact-form">
+<form action="https://formspree.io/f/xgvapgqn" method="POST" id="contact-form">
   <div class="form-row">
     <label for="name">Name</label>
     <input type="text" name="name" id="name" required>
@@ -137,10 +138,10 @@ Feel free to reach out to me through any of these channels.
     <textarea name="message" id="message" rows="4" required></textarea>
   </div>
   
-  <button type="submit">Send Message</button>
+  <button class="btn" type="submit">Send Message</button>
 </form>
 
-<script>
+<!-- <script>
   document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -166,7 +167,7 @@ Feel free to reach out to me through any of these channels.
       alert('Oops! There was a problem submitting your form. Please try again.');
     });
   });
-</script>
+</script> -->
 
 <style>
   #contact-form {
@@ -192,7 +193,7 @@ Feel free to reach out to me through any of these channels.
     font-size: 1rem;
   }
   
-  button {
+  .btn {
     background-color: #3b82f6;
     color: white;
     border: none;
