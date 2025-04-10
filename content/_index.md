@@ -2,14 +2,40 @@
 weight: 2
 layout: hextra-home
 ---
+<style>
+  .tech-scroll {
+    overflow: hidden;
+    width: 77%;
+    max-width: 100vw;
+  }
 
+  .tech-scroll-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-left 60s linear infinite;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .tech-scroll-track img {
+    height: 100px;
+  }
+
+  .tech-scroll-track:hover {
+      animation-play-state: paused;
+    animation: scroll-right 60s linear infinite;
+  }
+</style>
 <div class="hx:flex hx:gap-4 hx:flex-col hx:items-center hx:justify-center hx:max-w-screen-xl hx:mx-auto hx:pt-12 hx:px-4">
   <!-- Profile Image -->
   <img src="/images/profile-photo.jpg" alt="Profile Photo" style="width: 250px; height: auto; border-radius: 50%; margin-bottom: 1rem;" />
-  <!-- Headline -->
-  {{< hextra/hero-headline >}}
-  Let’s build something great together!
-  {{< /hextra/hero-headline >}}
   <!-- Subtitle -->
   <div class="hx:mt-4 hx:text-center hx:mb-6">
     {{< hextra/hero-subtitle >}}
@@ -17,19 +43,38 @@ layout: hextra-home
       Passionate about clean code, distributed systems, and solving real-world challenges.
     {{< /hextra/hero-subtitle >}}
   </div>
+  <!-- Headline -->
+  {{< hextra/hero-headline >}}
+  Let’s build something great together!
+  {{< /hextra/hero-headline >}}
   <!-- Divider -->
   <hr class="hx:border-gray-701 hx:my-12" />
+  <hr class="hx:border-gray-701 hx:my-12" />
+  <hr class="hx:border-gray-701 hx:my-12" />
   <!-- Stack Icons -->
-  <div style="display: flex; justify-content: center; gap: 16px; align-items: center; margin: 1rem 0;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" title="SQL" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" height="32" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux" height="32" />
-  </div>
+  <div class="tech-scroll">
+    <div class="tech-scroll-track">
+      <!-- Duplicate icons to make the loop seamless -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" title="SQL" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux" />
+      <!-- Repeat for seamless scroll -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" title="SQL" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux" />
+    </div>
+</div>
   <!-- Divider -->
+  <hr class="hx:border-gray-701 hx:my-12" />
+  <hr class="hx:border-gray-701 hx:my-12" />
   <hr class="hx:border-gray-701 hx:my-12" />
   <!-- Experience -->
   <div class="experience-container" style="max-width: 700px; margin: 0 auto; text-align: center;">
@@ -91,3 +136,16 @@ layout: hextra-home
     {{< hextra/hero-button text="Get In Touch" link="contact" >}}
   </div>
 </div>
+<script>
+    // Optional JavaScript to adjust animation duration based on actual content width
+    window.addEventListener('load', function() {
+      const ticker = document.querySelector('.tech-scroll-track');
+      const tickerWidth = ticker.offsetWidth;
+      const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+      
+      // Adjust animation duration based on content width for consistent speed
+      const speed = 20; // seconds for one complete cycle
+      const ratio = tickerWidth / containerWidth;
+      ticker.style.animationDuration = (speed * ratio / 2) + 's';
+    });
+  </script>
