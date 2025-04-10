@@ -50,7 +50,7 @@ params:
     default: system
     displayToggle: true
   footer:
-    displayPoweredBy: false
+    displayPoweredBy: true
     displayCopyright: true
 
 markup:
