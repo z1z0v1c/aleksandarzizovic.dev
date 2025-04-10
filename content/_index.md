@@ -6,7 +6,7 @@ layout: hextra-home
 <div class="hx:flex hx:gap-4 hx:flex-col hx:items-center hx:justify-center hx:max-w-screen-xl hx:mx-auto hx:pt-12 hx:px-4">
 
   <!-- Profile Image -->
-<img src="/images/A.jpg" alt="GitHub Profile Picture" style="width: 250px; height: auto; border-radius: 50%; margin-bottom: 1rem;" />
+<img src="/images/profile-photo.jpg" alt="Profile Photo" style="width: 250px; height: auto; border-radius: 50%; margin-bottom: 1rem;" />
 
 <!-- Headline -->
 
