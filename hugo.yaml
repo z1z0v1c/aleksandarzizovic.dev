@@ -7,7 +7,7 @@ languages:
     languageName: English
     weight: 1
 
-theme: hextra
+# theme: hextra
 
 permalinks:
   posts: /posts/:year/:month/:slug/
