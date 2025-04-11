@@ -122,10 +122,10 @@ layout: hextra-home
 
   <!-- Small Description -->
   <div class="hx:mt-4 hx:text-center hx:mb-6">
-    {{< hextra/hero-subtitle >}}
-      Hi, I’m Aleksandar - a Backend Developer based in Belgrade, Serbia.
-      Passionate about clean code, distributed systems, and solving real-world challenges.
-    {{< /hextra/hero-subtitle >}}
+      <h2><b>
+      Hi, I’m Aleksandar - a Backend Developer based in Belgrade, Serbia.</br>
+      Passionate about clean code, distributed systems, and solving real-world challenges.</b>
+      </h2>
   </div>
 
   <!-- Headline -->
@@ -220,6 +220,7 @@ layout: hextra-home
     const ticker = document.querySelector('.tech-scroll-track');
     const tickerWidth = ticker.offsetWidth;
     const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+    
     // Adjust animation duration based on content width for consistent speed
     const speed = 20; // seconds for one complete cycle
     const ratio = tickerWidth / containerWidth;
