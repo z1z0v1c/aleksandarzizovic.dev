@@ -10,6 +10,18 @@ title: "Home page"
 Let’s build something great together!
 {{< /typeit >}}
 
+<div style="display: flex; gap: 0.5rem; flex-wrap: wrap; font-size: 20em;">
+  {{< badge style="java" >}}Java{{< /badge >}} 
+  {{< badge style="golang" >}}Go{{< /badge >}} 
+  {{< badge style="csharp" >}}C#{{< /badge >}} 
+  {{< badge style="sql" >}}SQL{{< /badge >}} 
+  {{< badge style="git" >}}git{{< /badge >}} 
+  {{< badge style="docker" >}}Docker{{< /badge >}}
+  {{< badge style="Linux" >}}Linux{{< /badge >}} 
+</div>
+
+
+
 <h1>Work History</h1>
 
 {{< timeline >}}
