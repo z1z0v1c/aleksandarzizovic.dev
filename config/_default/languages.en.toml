@@ -13,14 +13,7 @@ title = "Aleksandar Zizovic"
   copyright = "© 2025 Aleksandar Zizovic"
 
 [params.author]
-  # email = "youremail@example.com"
   image = "img/profile-photo.jpg"
   imageQuality = 96
   headline = "Hi, I’m Aleksandar - a Backend Developer based in Belgrade, Serbia.  Passionate about clean code, distributed systems, and solving real-world challenges.</b>"
-  bio = "A little bit about you"
-  links = [
-    { email = "mailto:zizovic.aleksandar@outlook.com" },
-    { github = "https://github.com/z1z0v1c" },
-    { linkedin = "https://linkedin.com/in/aleksandar-zizovic" },
-    { twitter = "https://twitter.com/z1z0v1c" },
-  ]
+
