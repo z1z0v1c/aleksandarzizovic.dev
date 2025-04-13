@@ -11,7 +11,7 @@
   <title>404 Page not found &middot; Aleksandar Zizovic</title>
   <meta name="title" content="404 Page not found &middot; Aleksandar Zizovic" />
   
-  <meta name="description" content="Personal portfolio site" />
+  
   
   
   
@@ -65,14 +65,12 @@
   <meta property="og:url" content="http://localhost:1313/aleksandarzizovic.dev/404.html">
   <meta property="og:site_name" content="Aleksandar Zizovic">
   <meta property="og:title" content="404 Page not found">
-  <meta property="og:description" content="Personal portfolio site">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="404 Page not found">
-  <meta name="twitter:description" content="Personal portfolio site">
 
   
   
@@ -153,9 +151,9 @@
 
             
             
-  <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/aleksandarzizovic.dev/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
+    <p class="text-base font-medium" title="Projects">
         Projects
     </p>
 </a>
@@ -299,9 +297,9 @@
 
                     
   <li class="mt-1">
-    <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/aleksandarzizovic.dev/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
+        <p class="text-bg font-bg" title="Projects">
             Projects
         </p>
     </a>
@@ -339,6 +337,16 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
 
   
   <div class="relative flex flex-col grow">
@@ -363,7 +371,9 @@
     
     
     <p class="text-sm text-neutral-500 dark:text-neutral-400">
-      © 2025 Aleksandar Zizovic
+      &copy;
+      2025
+      
     </p>
     
 

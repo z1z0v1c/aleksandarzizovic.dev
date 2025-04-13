@@ -3,17 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/aleksandarzizovic.dev/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/aleksandarzizovic.dev/projects/tri/</loc>
+    <lastmod>2023-04-10T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/aleksandarzizovic.dev/projects/</loc>
+    <lastmod>2022-06-13T20:55:37+01:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/aleksandarzizovic.dev/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/aleksandarzizovic.dev/contact/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/aleksandarzizovic.dev/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -20,11 +20,10 @@ Let’s build something great together!
   {{< badge style="Linux" >}}Linux{{< /badge >}} 
 </div>
 
-
-
 <h1>Work History</h1>
 
 {{< timeline >}}
+
 {{< timelineItem icon="code" header="Backend Developer" badge="December 2023 - July 2024" subheader="Fincore Ltd" >}} {{< /timelineItem >}}
 {{< timelineItem icon="code" header="Software Developer" badge="May 2022 - December 2023" subheader="Trace One" >}} {{< /timelineItem >}}
 {{< timelineItem icon="code" header="Junior Software Developer" badge="November 2019 - May 2022" subheader="OtaCo Engineering" >}} {{< /timelineItem >}}

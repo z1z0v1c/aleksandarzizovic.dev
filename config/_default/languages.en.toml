@@ -5,6 +5,12 @@ weight = 1
 title = "Aleksandar Zizovic"
 
 [params]
+  [params.homepage]
+    layout = "list"
+    showRecent = true
+    mainSections = ["projects"]
+    recentLimit = 3
+
   displayName = "EN"
   isoCode = "en"
   rtl = false

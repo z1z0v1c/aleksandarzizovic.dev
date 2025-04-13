@@ -14,7 +14,7 @@ enableCodeCopy = false
 
 replyByEmail = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["projects"]
 # robots = ""
 
 disableImageOptimization = false
@@ -22,9 +22,9 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
-# defaultFeaturedImage = "IMAGE.jpg" # used as default for featured images in all articles
+defaultFeaturedImage = "img/background.jpg" # used as default for featured images in all articles
 
-# highlightCurrentMenuArea = true
+highlightCurrentMenuArea = true
 # smartTOC = true
 # smartTOCHideUnfocusedChildren = true
 
@@ -42,44 +42,44 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
+  layout = "background" # valid options: page, profile, hero, card, background, custom
   homepageImage = "img/background.jpg" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 5
+  showRecent = true
+  showRecentItems = 3
   showMoreLink = true
-  showMoreLinkDest = "/posts/"
+  showMoreLinkDest = "projects/"
   cardView = false
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
-  showDate = true
+  showDate = false
   showViews = false
   showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = false
-  showAuthor = true
+  showAuthor = false
   # showAuthorBottom = false
-  showHero = false
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  showHero = true
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
-  showDraftLabel = true
+  showBreadcrumbs = true
+  showDraftLabel = false
   showEdit = false
   # editURL = "https://github.com/username/repo/"
   editAppendPath = true
   seriesOpened = false
   showHeadingAnchors = true
   showPagination = true
-  invertPagination = false
-  showReadingTime = true
+  invertPagination = true
+  showReadingTime = false
   showTableOfContents = false
   # showRelatedContent = false
   # relatedContentLimit = 3
-  showTaxonomies = false
+  showTaxonomies = true
   showAuthorsBadges = false
-  showWordCount = true
+  showWordCount = false
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
   showZenMode = false
 
@@ -88,14 +88,14 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
-  showBreadcrumbs = false
-  showSummary = false
+  showBreadcrumbs = true
+  showSummary = true
   showViews = false
   showLikes = false
   showTableOfContents = false
   showCards = false
   orderByWeight = false
-  groupByYear = true
+  groupByYear = false
   cardView = false
   cardViewScreenWidth = false
   constrainItemsWidth = false
