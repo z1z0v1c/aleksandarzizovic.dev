@@ -21,5 +21,5 @@ title = "Aleksandar Zizovic"
 [params.author]
   image = "img/profile-photo.jpg"
   imageQuality = 96
-  headline = "Hi, I’m Aleksandar - a Backend Developer based in Belgrade, Serbia.  Passionate about clean code, distributed systems, and solving real-world challenges.</b>"
+  headline = "Hi, I’m Aleksandar - a Backend Developer based in Belgrade, Serbia.</br>Passionate about clean code, distributed systems, and solving real-world challenges.</b>"
 

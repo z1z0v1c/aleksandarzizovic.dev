@@ -2,6 +2,9 @@
 title: "Home page"
 ---
 
+</br>
+
+<div style="max-width: 100%; width: 100%; text-align: center;">
 {{< typeit 
   tag=h1
   lifeLike=true
@@ -9,6 +12,9 @@ title: "Home page"
 >}}
 Let’s build something great together!
 {{< /typeit >}}
+</div>
+
+</br>
 
 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; font-size: 20em;">
   {{< badge style="java" >}}Java{{< /badge >}} 
@@ -20,8 +26,13 @@ Let’s build something great together!
   {{< badge style="Linux" >}}Linux{{< /badge >}} 
 </div>
 
-<h1>Work History</h1>
+</br>
+</br>
 
+<h2 style="text-align: left;">Work History</h2>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+<div style="width: 90%; justify-content: center; align-items: center;" >
 {{< timeline >}}
 
 {{< timelineItem icon="code" header="Backend Developer" badge="December 2023 - July 2024" subheader="Fincore Ltd" >}} {{< /timelineItem >}}
@@ -31,3 +42,6 @@ Let’s build something great together!
 {{< timelineItem icon="code" header="Software QA Intern" badge="October 2018 - November 2018" subheader="Endava" >}} {{< /timelineItem >}}
 
 {{< /timeline >}}
+</div>
+</div>
+</div>
