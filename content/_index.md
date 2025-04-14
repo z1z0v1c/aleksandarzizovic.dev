@@ -14,9 +14,9 @@ Let’s build something great together!
 {{< /typeit >}}
 </div>
 
-</br>
+</br></br>
 
-<h2 style="text-align: left;">Tech Stack</h2>
+# Tech Stack
 
 </br>
 
@@ -25,15 +25,14 @@ Let’s build something great together!
   {{< skill-badge >}}Go{{< /skill-badge >}} 
   {{< skill-badge >}}C#{{< /skill-badge >}} 
   {{< skill-badge >}}SQL{{< /skill-badge >}} 
-  {{< skill-badge >}}git{{< /skill-badge >}} 
+  {{< skill-badge >}}Git{{< /skill-badge >}} 
   {{< skill-badge >}}Docker{{< /skill-badge >}}
   {{< skill-badge >}}Linux{{< /skill-badge >}} 
 </div>
 
-</br>
-</br>
+</br></br>
 
-<h2 style="text-align: left;">Work History</h2>
+# Work History
 
 <div style="display: flex; justify-content: center; align-items: center;">
 <div style="width: 90%; justify-content: center; align-items: center;" >
@@ -49,3 +48,5 @@ Let’s build something great together!
 </div>
 </div>
 </div>
+
+</br>

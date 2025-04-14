@@ -1,12 +1,12 @@
 ---
-title: Contact
 layout: simple
-toc: false
 ---
 
-## Get In Touch
+</br></br>
 
-Feel free to reach out to me through any of these channels.
+# Get In Touch
+
+<h3>Feel free to reach out to me through any of these channels.</h3>
 
 <div class="contact-grid">
   <!-- Email -->
@@ -52,14 +52,19 @@ Feel free to reach out to me through any of these channels.
       <a href="https://twitter.com/z1z0v1c" target="_blank">@z1z0v1c</a>
     </div>
   </div>
-  
-  <!-- Location -->
+</div>
+
+</br></br>
+
+# Where am I? 
+
+<div class="contact-grid">
+<!-- Location -->
   <div class="contact-card">
     <div class="contact-icon">
       {{< icon "location-dot" >}}
     </div>
     <div class="contact-info">
-      <h3>Location</h3>
       <p>Belgrade, Serbia</p>
     </div>
   </div>
@@ -115,7 +120,9 @@ Feel free to reach out to me through any of these channels.
 }
 </style>
 
-## Send Me a Message
+</br></br>
+
+# Send Me a Message
 
 <form action="https://formspree.io/f/xgvapgqn" method="POST" id="contact-form">
   <div class="form-row">
@@ -171,7 +178,7 @@ Feel free to reach out to me through any of these channels.
 
 <style>
   #contact-form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 2rem 0;
   }
   
