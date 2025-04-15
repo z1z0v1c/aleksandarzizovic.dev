@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/aleksandarzizovic.dev/projects/endava/</guid>
       <description>Test framework for the official Endava website.</description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/aleksandarzizovic.dev/projects/endava/featured.png" />
     </item>
     
   </channel>

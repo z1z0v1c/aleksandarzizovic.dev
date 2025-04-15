@@ -16,7 +16,7 @@
       
       <guid>http://localhost:1313/aleksandarzizovic.dev/projects/tri/</guid>
       <description>Sports betting software.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/aleksandarzizovic.dev/projects/tri/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/aleksandarzizovic.dev/projects/tri/featured.png" />
     </item>
     
     <item>
@@ -27,16 +27,6 @@
       <guid>http://localhost:1313/aleksandarzizovic.dev/projects/o2c/</guid>
       <description>Order-to-Cash processing system.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/aleksandarzizovic.dev/projects/o2c/featured.jpg" />
-    </item>
-    
-    <item>
-      <title>Axcel</title>
-      <link>http://localhost:1313/aleksandarzizovic.dev/projects/axcel/</link>
-      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/aleksandarzizovic.dev/projects/axcel/</guid>
-      <description>Software for synchronizing logistics on tank terminal facilities.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/aleksandarzizovic.dev/projects/axcel/featured.jpg" />
     </item>
     
   </channel>

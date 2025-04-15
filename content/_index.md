@@ -47,6 +47,9 @@ Let’s build something great together!
 {{< /timeline >}}
 </div>
 </div>
-</div>
+
+</br></br>
+
+# Projects
 
 </br>
